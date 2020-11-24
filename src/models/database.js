@@ -3,105 +3,72 @@ const {Schema} = mongoose;
 
 const Data = new Schema({
     
-    /*-----index-----*/
-    ipart:String,
-    iparc:String,
-    
-    /*----- Noticias---- */
-    noticias:String,
+// Juagadores ////////////////////////////////////////////////////////////
+jnombre: String,
+japellido: String,
+jcedula: String,
+jimgperfil: String,
+jdetalles: String,
+jequipoid: String,
+jamarillas: Number,
+jrojas: Number,
+jsanciones: Number,
 
-    /*------ Comentarios -----*/
-    comhead: String,
-    combody: String,
-    comhead1: String,
-    combody1: String,
-
-    /*---- Jugadores ----- */
-    jnombre: String,
-    jimg: String,
-    japellido: String,
-    jcedula: String,
-    jgenero: String,
-    jgoles: Number,
-    jtarjetasam: Number,
-    jtarjestasroj: Number,
-    jamonestaciones: Number,
-    jequipo: String,
-    jdivision: String,
-
-    /*------ Equipos ----- */
-    enombre: String,
-    eescudo: String,
-    egenero: String,
-    edivision: String,
-    edelegado: String,
-    edelcedula: String,
-    epuntos: Number,
-    epartidosj: Number,
-    epartidosg: Number,
-    epartidosempatados: Number,
-    epartidosperdidos: Number,
-    egolesmas: Number,
-    egolesmenos: Number,
-    esaldo: Number,
-    efairplay: Number,
-
-    /*------- Torneos ------*/
-    tnombre: String,
-    tdivisional: String,
+// Equipos //////////////////////////////////////////////////////////////
+enombre: String,
+eescudo: String,
+edivisionalid: String,
 
 
-    /*------- Fechas -------*/
-    fnombre: String,
-    ftorneo: String,
+// Divisionales /////////////////////////////////////////////////////////
+dnombre: String,
 
+// torneo //////////////////////////////////////////////////////////////
+tnombre: String,
+tdivisionalid: String,
+tpuntuable: Boolean,
 
-    /*------- Partidos ------*/
-    ptorneo: String,
-    pfecha: String,
-    pfechaid: String,
-    pdate: String,
-    ptime: String,
-    pequipoa: String,
-    pequipob: String,
-    peamarcador: Number,
-    pebmarcador: Number,
-    peagoles: String,
-    pebgoles: String,
-    pamarillasa: String,
-    pamarillasb: String,
-    projasa: String,
-    projasb: String,
-    pfpa: String,
-    pfpb: String,
-    parbitro: String,
-    pobservaciones: String,
-    pcancha: String,
-    pid: String,
-    pjugador: String,
-    ppuntualidad: String,
-    pfairplay: String,
-    ppelota: String,
-    pindumentaria: String,
-    pformulario: String,
+// Fecha //////////////////////////////////////////////////////////////
+fnombre: String,
+ftorneoid: String,
 
-    /*---- Seguridad------*/
-    paneladmin: String,
-    delegado:String,
+// Partido /////////////////////////////////////////////////////////////
+pnombre: String,
+pdetalles: String,
+pfechaid: String,
+pvisible: Boolean,
+ppuntuable: Boolean,
+pequipoa: String,
+pequipob: String,
+pgolesa: Number,
+pgolesb: Number,
+pfairplaya: Number,
+pfairplayb: Number,
 
-    /*----- Mensaje ----*/
-    msgemail: String,
-    msgbody: String,
+// Estadisticas ///////////////////////////////////////////////////////
+epartidoid: String,
+eequipo: String,
+ejugador: String,
+egoles: Number,
+eamarillas: Number,
+erojas: Number,
 
-    /*---- Kaygua ----*/
-    msgname: String,
-    msgmail: String,
-    msgtel: String,
-    msgtext: String,
-    
-    /*------ imagenes ----- */
-    imgdiv: String,
-    imgurl: String
+// Noticias //////////////////////////////////////////////////////////
+ntitulo: String,
+ncuerpo: String,
+nimagen: String,
+
+// Customizacion /////////////////////////////////////////////////////
+backgroundid: String,
+backgroundimg: String,
+organizationlogo: String,
+
+// Usuarios //////////////////////////////////////////////////////////
+username: String,
+userlastname: String,
+userid: String,
+userpassword: String,
+usertype: String,
 
 
 });
